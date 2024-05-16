@@ -14,7 +14,7 @@
 }
 header{
     width: 100%;
-    background-color: #4e5960;
+    background-color: #f0362d;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +25,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 20px 100px;
+    gap: var(--gap, 2em);
 }
 .logo {
     font-size: 18px;
