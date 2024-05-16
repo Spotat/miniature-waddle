@@ -1,44 +1,43 @@
 :root {
-    --color1: #fefefe;
-    --color2: #e7ebed;
-    --accent1: #4e5960;
-    --accent2: #162832;
-    --accent3: #4f42f7;
-    --accent4: #f0362d;
+  --color1: #fefefe;
+  --color2: #e7ebed;
+  --accent1: #4e5960;
+  --accent2: #162832;
+  --accent3: #4f42f7;
+  --accent4: #f0362d;
 }
 * {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.45;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.45;
 }
-header{
-    width: 100%;
-    background-color: #f0372dc7;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
+header {
+  width: 100%;
+  background-color: #f0372dc7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
 }
 .logo {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--accent2);
-    text-transform: uppercase;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--accent2);
+  text-transform: uppercase;
 }
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 100px;
-    gap: var(--gap, 2em);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap, 2em);
 }
-.navbar> a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: var(--accent2);
-    margin-left: 20px;
+.navbar > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--accent2);
+  margin-left: 20px;
 }
