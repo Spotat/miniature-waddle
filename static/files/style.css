@@ -26,9 +26,12 @@ header {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
 }
 .header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 20px 100px;
