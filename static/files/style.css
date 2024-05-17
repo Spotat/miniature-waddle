@@ -39,19 +39,16 @@ header {
   text-transform: uppercase;
 }
 .navbar {
-<<<<<<< HEAD
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 100px;
     gap: var(--gap, 2em);
-=======
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--gap, 2em);
->>>>>>> d35326c (edit)
 }
 .navbar > a {
   font-family: Arial, Helvetica, sans-serif;
@@ -65,8 +62,4 @@ header {
 /* .container*/
 .container {
   max-width: 1050px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d35326c (edit)
