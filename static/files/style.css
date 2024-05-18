@@ -102,14 +102,14 @@ header {
 }
 .slider-overlay > h1{
   font-size: 4.8vh;
-  color: var(--color2);
+  color: var(--accent2);
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
 }
 .slider-overlay > p {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--accent4);
+  color: var(--color1);
   letter-spacing: 1.4px;
 }
 .slider-overlay > button {
@@ -121,4 +121,5 @@ header {
   font-size: 19px;
   text-transform: capitalize;
   font-weight: 600;
+  padding: 15px 30px;
 }
