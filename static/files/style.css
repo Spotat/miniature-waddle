@@ -3,7 +3,7 @@
   --color2: #e7ebed; /* Secondary background */
   --accent1: #4e5960; /* Dark text */
   --accent2: #162832; /* Darker elements */
-  --accent3: #4f42f7; /* Primary accent color */
+  --accent3: #4f42f7; Primary accent color
   --accent4: #f0362d; /* Secondary accent color */
 }
 
@@ -46,28 +46,37 @@ header {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .navbar {
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 0 80px; */
+  justify-content: space-between;
+  background-color: /* give it a color of choice */;
 }
-.navbar > a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  text-transform: capitalize;
-  text-decoration: none;
-  color: var(--accent2);
-  margin-left: 20px;
-  text-wrap: nowrap;
-  transition: .3s ease-in-out;
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
   padding: 20px;
-  cursor: pointer;
 }
-.navbar > a:hover {
-  background: var(--accent4);
-   color: var(--color1);
+
+.navbar > ul > li {
+  list-style: none; /* Remove list bullets */
 }
+
+.navbar > ul > li > a {
+  color: var(--accent3-new); /* Use the new color */
+  text-decoration: none; /* Remove underline */
+  padding: 0 20px; /* Add some padding */
+  font-size: 18px; /* Increase the font size */
+  transition: color 0.3s ease;
+}
+
+.navbar > ul > li > a:hover {
+  color: #fff; /* Change color when hovered */
+}
+
 
 /* .container*/
 .container {
@@ -228,5 +237,10 @@ header {
 
   .slider p {
     font-size: 0.9rem;
+  }
+  
+  .navbar > ul > li > a {
+    padding: 15px;
+    font-size: 14px;
   }
 }
