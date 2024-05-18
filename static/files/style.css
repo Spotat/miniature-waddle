@@ -103,7 +103,7 @@ body {
   max-width: 1250px;
 }
 
-/* Slider Styles */
+/* Slider Styles *//* Slider Styles */
 .slider {
   width: 100%;
   position: relative;
@@ -119,6 +119,11 @@ body {
   object-fit: cover;
   object-position: center;
   filter: brightness(80%);
+  transition: transform 1s ease-in-out;
+}
+
+.slider:hover img {
+  transform: scale(1.05);
 }
 
 .slider-overlay {
@@ -129,28 +134,32 @@ body {
   color: var(--color1);
   text-align: center;
   padding: 2rem;
-  /* background: var(--accent2); */
   border-radius: 10px;
   max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  backdrop-filter: blur(5px); /* Blur effect for supported browsers */
+  animation: slideIn 1s ease forwards;
 }
 
-.slider h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--accent3);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.slider h4 {
-  font-size: 1.5rem;
+.slider h1, .slider h4, .slider p {
   margin-bottom: 1rem;
-  color: var(--accent4);
+  animation: fadeIn 1.5s ease-in;
 }
 
-.slider p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: var(--accent1);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .slider button {
@@ -161,11 +170,13 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .slider button:hover {
-  background-color: var(--accent4);
+  background-color: var(--accent3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
