@@ -85,10 +85,11 @@ header {
 
 .slider img {
   width: 100%;
-  height: auto;
+  height: 40vh;
   display: block;
   object-fit: cover;
   object-position: center;
+  filter: brightness(80%);
 }
 
 .slider-overlay {
@@ -99,7 +100,7 @@ header {
   color: var(--color1);
   text-align: center;
   padding: 2rem;
-  background: var(--accent2);
+  /* background: var(--accent2); */
   border-radius: 10px;
   max-width: 80%;
 }
@@ -127,7 +128,7 @@ header {
   padding: 0.8rem 2rem;
   font-size: 1rem;
   color: var(--color1);
-  background-color: var(--accent3);
+  background-color: var(--accent4);
   border: none;
   border-radius: 5px;
   cursor: pointer;
