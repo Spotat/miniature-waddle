@@ -34,7 +34,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
 }
 .logo {
   font-size: 18px;
