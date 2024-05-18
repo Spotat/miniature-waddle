@@ -3,7 +3,7 @@
   --color2: #e7ebed; /* Secondary background */
   --accent1: #4e5960; /* Dark text */
   --accent2: #162832; /* Darker elements */
-  --accent3: #4f42f7; /* Primary accent color */
+  --accent3: #4f42f7; Primary accent color
   --accent4: #f0362d; /* Secondary accent color */
 }
 
@@ -36,6 +36,8 @@ body {
 
 /* Navbar styling */
 .navbar {
+  padding: 0;
+  margin: 0;
   display: flex;
 }
 
@@ -344,5 +346,10 @@ body {
 
   .slider p {
     font-size: 0.9rem;
+  }
+  
+  .navbar > ul > li > a {
+    padding: 15px;
+    font-size: 14px;
   }
 }
