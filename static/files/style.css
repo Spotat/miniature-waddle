@@ -47,7 +47,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 100px;
+  padding: 0 100px;
   gap: var(--gap, 2em);
 }
 .navbar > a {
@@ -58,6 +58,12 @@ header {
   color: var(--accent2);
   margin-left: 20px;
   text-wrap: nowrap;
+  transition: .33s ease-in-out;
+  padding: 20px;
+}
+.navbar > a:hover {
+  background: var(--accent4);
+   color: var(--color1);
 }
 
 /* .container*/
