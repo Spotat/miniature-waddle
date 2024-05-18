@@ -76,6 +76,7 @@ header {
 
 /* Slider Styles */
 .slider {
+  width: 100%;
   position: relative;
   max-width: 100%;
   height: auto;
@@ -86,6 +87,8 @@ header {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .slider-overlay {
