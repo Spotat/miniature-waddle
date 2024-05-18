@@ -60,6 +60,7 @@ header {
   text-wrap: nowrap;
   transition: .33s ease-in-out;
   padding: 20px;
+  cursor: pointer;
 }
 .navbar > a:hover {
   background: var(--accent4);
@@ -90,5 +91,5 @@ header {
   z-index: 100;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% -50%);
 }
