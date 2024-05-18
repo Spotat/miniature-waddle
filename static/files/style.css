@@ -1,11 +1,12 @@
 :root {
-  --color1: #fefefe;
-  --color2: #e7ebed;
-  --accent1: #4e5960;
-  --accent2: #162832;
-  --accent3: #4f42f7;
-  --accent4: #f0362d;
+  --color1: #fefefe; /* Light background */
+  --color2: #e7ebed; /* Secondary background */
+  --accent1: #4e5960; /* Dark text */
+  --accent2: #162832; /* Darker elements */
+  --accent3: #4f42f7; /* Primary accent color */
+  --accent4: #f0362d; /* Secondary accent color */
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -73,65 +74,67 @@ header {
   max-width: 1250px;
 }
 
+/* Slider Styles */
 .slider {
-  width: 100%;
-  height: 45vh;
   position: relative;
-  display: flex;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
-.slider > img {
+
+.slider img {
   width: 100%;
-  height: 100%;
-  image-orientation: from-image;
-  object-position: center;
-  object-fit: cover;
-  filter: brightness(80%);
+  height: auto;
+  display: block;
 }
+
 .slider-overlay {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding: 70px 400px;
-  gap: var(--gap, 1.5em);
-}
-.slider-overlay > h1{
-  font-size: 5vh;
-  color: var(--accent2);
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-}
-.slider-overlay > h4 {
-  font-size: 18px;
-  color: var(--accent4);
-  letter-spacing: 1.4px;
-}
-.slider-overlay > p {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--color1);
-  letter-spacing: 1.4px;
   text-align: center;
-}
-.slider-overlay > button {
-  border: none;
+  padding: 2rem;
+  background: var(--accent2);
   border-radius: 10px;
-  background-color: #f0372db6;
-  color: var(--color2);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
-  text-transform: capitalize;
-  font-weight: 600;
-  padding: 15px 30px;
-  outline: none;
+  max-width: 80%;
 }
+
+.slider h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent3);
+}
+
+.slider h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent4);
+}
+
+.slider p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--accent1);
+}
+
+.slider button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: var(--color1);
+  background-color: var(--accent3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider button:hover {
+  background-color: var(--accent4);
+}
+
 
 /* about section */
 .about {
@@ -205,5 +208,21 @@ header {
 @media (max-width: 768px) {
   .service-grid {
     grid-template-columns: 1fr;
+  }
+  .slider-overlay {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  .slider h1 {
+    font-size: 2rem;
+  }
+
+  .slider h4 {
+    font-size: 1.2rem;
+  }
+
+  .slider p {
+    font-size: 0.9rem;
   }
 }
