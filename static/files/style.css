@@ -95,3 +95,15 @@ header {
   left: 50%;
   transform: translate(-50% -50%);
 }
+.slider-overlay > h1{
+  font-size: 8vh;
+  color: var(--color2);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.slider-overlay > p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--accent4);
+  letter-spacing: 1.4px;
+}
