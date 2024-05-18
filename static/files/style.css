@@ -86,7 +86,7 @@ header {
 .slider-overlay {
   width: 100%;
   position: absolute;
-  z-index: 100;
+  /* z-index: 100; */
   top: 20%;
   left: 50%;
 }
