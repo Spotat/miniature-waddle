@@ -19,48 +19,40 @@ body {
   place-items: center;
 }
 
-/* Logo styling */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 20px;
-}
-
-/* Navbar styling */
-.navbar {
-  padding: 0;
-  margin: 0;
+/* Style the header */
+.header.container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #333;
+  color: white;
 }
 
-/* Navbar links styling */
+/* Style the logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Style the navbar links */
 .navbar a {
   color: var(--accent-color);
   text-decoration: none;
-  padding: 8px 15px;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
-/* Navbar links hover effect */
-.navbar a:hover {
-  background-color: #555;
-}
-/* Dropdown button styling */
+/* Style the dropdown button */
 .dropbtn {
-  background-color: #333;
+  background: none;
   color: var(--accent-color);
-  padding: 8px 15px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
+/* Style the dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -70,23 +62,16 @@ body {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #555;}
-
+/* Hamburger menu for mobile */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
 
 
 /* .container*/
@@ -344,6 +329,34 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a, .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-content {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .service-grid {
     grid-template-columns: 1fr;
   }
