@@ -154,3 +154,56 @@ header {
   object-position: center;
   align-self: flex-end;
 }
+/* Services Section Styles */
+.services-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.services-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.service h3 {
+  color: #333;
+}
+
+.service p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
