@@ -87,7 +87,6 @@ header {
   width: 100%;
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50% -50%);
 }
