@@ -79,3 +79,11 @@ header {
   object-position: center;
   object-fit: cover;
 }
+.slider-overlay {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
