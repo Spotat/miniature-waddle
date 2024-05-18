@@ -1,10 +1,10 @@
 :root {
-  --color1: #fefefe; /* Light background */
-  --color2: #e7ebed; /* Secondary background */
-  --accent1: #4e5960; /* Dark text */
-  --accent2: #162832; /* Darker elements */
-  /* --accent3: #4f42f7; Primary accent color */
-  --accent4: #f0362d; /* Secondary accent color */
+  --primary-color: #8B0000; /* dark-reddish */
+  --secondary-color: #708090; /* slate-gray -> for secondary buttons and accents */
+  --bg-color: #FDFDFD; /* off-white -> for content backgrounds to ensure readability */
+  --accent-color: #FFD700; /* gold ->  to highlight important elements like CTAs */
+  --neural-dark: #36454F; /* charcoal ->  for text and primary content areas */
+  --neural-light: #DCDCDC; /*gainsboro-> for dividers and secondary content areas* /
 }
 
 * {
@@ -44,7 +44,7 @@ body {
 
 /* Navbar links styling */
 .navbar a {
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
   padding: 8px 15px;
   transition: background-color 0.3s ease;
@@ -57,7 +57,7 @@ body {
 /* Dropdown button styling */
 .dropbtn {
   background-color: #333;
-  color: white;
+  color: var(--accent-color);
   padding: 8px 15px;
   border: none;
   cursor: pointer;
@@ -73,7 +73,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--bg-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -131,7 +131,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--color1);
+  color: var(--bg-color);
   text-align: center;
   padding: 2rem;
   border-radius: 10px;
@@ -165,8 +165,8 @@ body {
 .slider button {
   padding: 0.8rem 2rem;
   font-size: 1rem;
-  color: var(--color1);
-  background-color: var(--accent4);
+  color: var(--neural-light);
+  background-color: var(--accent-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -174,33 +174,41 @@ body {
 }
 
 .slider button:hover {
-  background-color: var(--accent3);
+  background-color: var(--primary-color);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-/* about section */
+/* Enhanced About Section */
 .about {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3em;
+  display: flex;
+  flex-direction: row-reverse; /* Image on the left, text on the right */
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
+  padding: 2em;
+  background: linear-gradient(135deg, var(--neural-light) 0%, var(--secondary-color) 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
 .about p {
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--accent1);
-  text-align: start;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--neural-light);
+  line-height: 1.6;
+  margin-right: 2em;
 }
-.about > img {
-  width: 100%;
-  height: 25vh;
-  object-fit: cover;
-  object-position: center;
-  align-self: flex-end;
+
+.about img {
+  width: 45%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
 /* Services Section Styles */
 .services-section {
   text-align: center;
