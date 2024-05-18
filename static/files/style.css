@@ -95,6 +95,9 @@ body {
   overflow: hidden;
 }
 
+.slider h4 {
+  color: var(--accent-color);
+}
 .slider img {
   width: 100%;
   height: 48vh;
