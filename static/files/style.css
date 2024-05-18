@@ -19,15 +19,6 @@ body {
   place-items: center;
 }
 
-.header.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-}
-
 /* Logo styling */
 .logo {
   font-size: 24px;
@@ -420,4 +411,5 @@ footer {
   }
 
   /* ... other styles ... */
+}
 }
