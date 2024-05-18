@@ -163,18 +163,10 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Enhanced About Section */
 .about {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse; /* Image on the left, text on the right */
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  padding: 2em;
-  background: linear-gradient(135deg, var(--neural-light) 0%, var(--secondary-color) 100%);
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .about p {
@@ -184,13 +176,6 @@ body {
   color: var(--neural-light);
   line-height: 1.6;
   margin-right: 2em;
-}
-
-.about img {
-  width: 45%;
-  height: 25vh;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* Services Section Styles */
