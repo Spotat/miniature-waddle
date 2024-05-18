@@ -92,6 +92,7 @@ body {
 /* .container*/
 .container {
   max-width: 1250px;
+  margin: auto;
 }
 
 /* Slider Styles *//* Slider Styles */
@@ -157,7 +158,7 @@ body {
   padding: 0.8rem 2rem;
   font-size: 1rem;
   color: var(--neural-light);
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -165,8 +166,9 @@ body {
 }
 
 .slider button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   transform: translateY(-3px);
+  color: var(--secondary-color);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -195,7 +197,7 @@ body {
 
 .about img {
   width: 45%;
-  height: auto;
+  height: 25vh;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
