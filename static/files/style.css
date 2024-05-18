@@ -98,7 +98,7 @@ header {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 20px 400px;
+  padding: 70px 400px;
   gap: var(--gap, 1.5em);
 }
 .slider-overlay > h1{
@@ -112,17 +112,19 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color1);
   letter-spacing: 1.4px;
+  text-align: center;
 }
 .slider-overlay > button {
   border: none;
   border-radius: 10px;
   background-color: #f0372db6;
-  color: var(--accent2);
+  color: var(--color2);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
   text-transform: capitalize;
   font-weight: 600;
   padding: 15px 30px;
+  outline: none;
 }
 
 /* about section */
