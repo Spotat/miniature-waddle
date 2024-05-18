@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.45;
+  letter-spacing: 1.4px;
 }
 body {
   display: grid;
@@ -107,6 +108,11 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
 }
+.slider-overlay > h4 {
+  font-size: 18px;
+  color: var(--accent4);
+  letter-spacing: 1.4px;
+}
 .slider-overlay > p {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -134,7 +140,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 .about p {
   font-size: 17px;
