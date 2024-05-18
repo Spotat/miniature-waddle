@@ -84,7 +84,6 @@ header {
   image-orientation: from-image;
   object-position: center;
   object-fit: cover;
-  padding: 20px 100px;
 }
 .slider-overlay {
   width: 100%;
